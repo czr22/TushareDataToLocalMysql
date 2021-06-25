@@ -3,6 +3,7 @@ import sys
 import tushare as ts
 import time
 import pandas as pd
+
 assert pymysql.__version__ , "请使用pip install pymysql 下载 pymysql"
 
 class Mysql:
@@ -77,7 +78,8 @@ def insertValueSQL(tName,df):
 
 if __name__ == "__main__":
     # 连接至tushare
-    token = 'e8df84bd1b25a8a2a2ceb7edf7ad41f2c3a1d3ec604bb8abd40321f4'
+    #如果没有可以到https://tushare.pro注册
+    token = '输入你自己的token'
     ts.set_token(token)
     pro = ts.pro_api()
     with Mysql(password='12345678',db='tushare') as mysql:
