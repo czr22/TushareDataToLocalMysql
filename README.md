@@ -1,1 +1,2 @@
 # TushareDataToLocalMysql
+目的：将tushare中的数据导入至本地mysql数据库中
